@@ -17,14 +17,20 @@ const WeatherSearch = (props) => {
     return (
         // <>
         //     <h2>Search</h2>
-            <form onSubmit={handleSubmit}>
-                <label>Enter a city: </label>
+            // bootstrap additions 👇
+            <form onSubmit={handleSubmit} className="d-flex" role="search">
+                {/* <label>Enter a city: </label> */}
                 <input 
-                type="text" 
+                type="search" 
                 value={formData}
                 onChange={handleChange}
+                // bootstrap additions 👇
+                className="form-control me-2 bg-light"
+                placeholder="Search for a City"
+                aria-label="Search"
+                data-bs-theme="dark"
                 />
-                <button className='btn btn-info' type="submit">Search</button>
+                <button className='btn btn-outline-info' type="submit">Search</button>
             </form>
         // </>
     )
