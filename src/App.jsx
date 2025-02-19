@@ -1,7 +1,8 @@
-import './App.css'
+
 import * as weatherService from './services/weatherService'
 import { useState, useEffect } from 'react'
 import WeatherSearch from './components/WeatherSearch'
+import Navbar from './components/Navbar'
 
 const App = () => {
 	const [weather, setWeather] = useState({})
@@ -19,9 +20,10 @@ const App = () => {
 
 	return (
 		<>
+			<Navbar fetchData={fetchData} />
 			<h1>Weather API</h1>
 			{/* <button onClick={fetchData}>Fetch Weather Data</button> */}
-			<WeatherSearch fetchData={fetchData} />
+			{/* <WeatherSearch fetchData={fetchData} /> */}
 			<hr />
 			{loading ? (
 				'Loading...'

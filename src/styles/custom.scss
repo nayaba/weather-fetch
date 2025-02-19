@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary: pink;
+$danger: yellow;
+$info: green;
+
+$font-family-base: 'Sour Gummy';
+
+// Import Bootstrap after variables
+@import 'bootstrap/scss/bootstrap'

@@ -15,8 +15,8 @@ const WeatherSearch = (props) => {
     }
 
     return (
-        <>
-            <h2>Search</h2>
+        // <>
+        //     <h2>Search</h2>
             <form onSubmit={handleSubmit}>
                 <label>Enter a city: </label>
                 <input 
@@ -24,9 +24,9 @@ const WeatherSearch = (props) => {
                 value={formData}
                 onChange={handleChange}
                 />
-                <button type="submit">Search</button>
+                <button className='btn btn-info' type="submit">Search</button>
             </form>
-        </>
+        // </>
     )
 }
 
